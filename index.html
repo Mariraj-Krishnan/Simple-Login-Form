@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="all.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Sign In</h2>
+    <form action="#" class="signIn" id="signIn">
+      <p>
+        <label for="email">Email address</label><br>
+        <input type="text" placeholder="example@123.com" id="email" required />
+      </p>
+      <p>
+        <label for="password">Password</label><br>
+        <input type="password" placeholder="Enter your password" id="password" required />
+        <span class="pwdreveal"><i class="far fa-eye-slash"></i></span>
+        <br>
+        <a href="#">Forgot password ?</a>
+      </p>
+      <button id="signInbtn" type="submit" form="signIn">Sign In</button>
+    </form>
+    <p>Do not have an account ? <a href="#" onclick='reg()'>Create an account</a></p>
+  </div>
+  <div class="container regContainer">
+    <h2>Register</h2>
+    <form action="#" class="register" id="register">
+      <div>
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" placeholder="John Karl" id="name" required />
+        </p>
+        <p>
+          <label for="dob">Date of birth</label><br>
+          <input type="text" placeholder="dd/mm/yyyy" id="name" required />
+        </p>
+        <p>
+          <label for="email">Email address</label><br>
+          <input type="text" placeholder="example@123.com" id="email" required />
+        </p>
+        <p>
+          <label for="regpassword">Password</label><br>
+          <input type="password" placeholder="Enter your password" id="regpassword" required />
+          <span class="pwdreveal"><i class="far fa-eye-slash"></i></span>
+        </p>
+        <p>
+          <label for="cfmpassword">Password</label><br>
+          <input type="password" placeholder="Re-enter your password" id="cfmpassword" required />
+          <span class="pwdreveal"><i class="far fa-eye-slash"></i></span>
+        </p>
+      </div>
+      <button id="regbtn" type="submit" form="register">Regiter</button>
+    </form>
+    <p>Already have an account ? <a href="#" onclick="signIn()">Sign In</a></p>
+  </div>
+</body>
+
+</html>
